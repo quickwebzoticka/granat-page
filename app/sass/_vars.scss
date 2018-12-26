@@ -1,2 +1,44 @@
 $red-color: #CD213B;
 $green-color: #92C100;
+
+$w1920: 1920px;
+$w1366: 1365px;
+$w1024: 1024px;
+$w768: 768px;
+$w450: 450px;
+$w375: 375px;
+
+
+@mixin w1920 {
+	@media screen and (max-width: $w1920) {
+		@content
+	}
+}
+
+@mixin w1366 {
+	@media screen and (max-width: $w1366) {
+		@content
+	}
+}
+
+@mixin w1024 {
+	@media screen and (max-width: $w1024) {
+		@content
+	}
+}
+
+@mixin w768 {
+	@media screen and (max-width: $w768) {
+		@content
+	}
+}
+@mixin w450 {
+	@media screen and (max-width: $w450) {
+		@content
+	}
+}
+@mixin w375 {
+	@media screen and (max-width: $w375) {
+		@content
+	}
+}
